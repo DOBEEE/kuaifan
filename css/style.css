@@ -1,0 +1,23 @@
+.translation:before{
+	position: absolute;
+	content:"\00a0";
+	height:0px;  
+    width:0px;  
+    border-width:6px 15px 6px 0;  
+    border-style:solid;  
+    border-color:transparent #000 transparent transparent;
+    margin-top:0px;
+    margin-left: -15px; 
+}
+.translation{
+	opacity: 0.8;
+}
+.transbtn{
+	opacity:0.5;
+	-webkit-transition: opacity 800ms ease 100ms;
+          transition: opacity 800ms ease 100ms;
+}
+
+.transbtn:hover{
+	opacity: 1;
+}
