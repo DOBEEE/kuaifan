@@ -14,7 +14,7 @@ function showWeather(result){
     result = JSON.parse(result);
     var wea=document.getElementById('weather');
     var weacode=parseInt(result['HeWeather data service 3.0'][0].now.cond.code);
- // alert(weacode);
+
     if (weacode==100||weacode==900||weacode==901) {
        
         document.getElementsByClassName('sunny')[0].style.visibility='visible';

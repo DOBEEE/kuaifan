@@ -17,7 +17,7 @@
         "default_popup": "popup.html"
     },
     "options_page": "options.html",
-     "permissions": [
+    "permissions": [
         "tabs",
         "http://localhost:9240/",
         "activeTab",
@@ -25,15 +25,16 @@
         "storage",
         "*://*/*"
     ],
+    "background": {
+       "scripts": ["js/background.js"]
+    },
     "content_scripts":[
         {
             "matches":["*://*/*"],
             "js":["js/translate.js"],
             "css":["css/style.css"]
         }
-    ],
-    "background": {
-       "scripts": ["js/background.js"]
-    }
+    ]
+    
    
 }
